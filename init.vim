@@ -1,8 +1,7 @@
-
-:nmap <space>e :CocCommand explorer<CR>
-call plug#begin('~/.vim/plugged')
-
-
-Plug 'fatih/vim-go'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-call plug#end()
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/general/functions.vim
+source $HOME/.config/nvim/plug-config/coc/coc.vim
+source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
+source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/themes/nord.vim
