@@ -166,6 +166,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "
     " Themes
     Plug 'arcticicestudio/nord-vim'
+    "
+    " IDE
+    Plug 'JamshedVesuna/vim-markdown-preview'
+    "
     " Programming
     " GO
     Plug 'fatih/vim-go' 

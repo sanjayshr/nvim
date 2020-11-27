@@ -61,3 +61,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 cmap w!! w !sudo tee %
 
 autocmd User CocNvimInit :CocCommand explorer
+
+" MARKDOWN config
+" https://github.com/JamshedVesuna/vim-markdown-preview
+let vim_markdown_preview_github=1
