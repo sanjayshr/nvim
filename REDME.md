@@ -7,6 +7,6 @@
 
     Description: Preview MARKDOWN file.
 
-    Keys: Ctrl + p  
+    Keys:
   
 

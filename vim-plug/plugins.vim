@@ -168,7 +168,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'arcticicestudio/nord-vim'
     "
     " IDE
-    Plug 'JamshedVesuna/vim-markdown-preview'
+    "
+    " MARKDOWN
+    "
+    " If you have nodejs and yarn
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     "
     " Programming
     " GO
@@ -181,3 +186,4 @@ autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
