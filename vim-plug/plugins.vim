@@ -52,9 +52,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
     " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    Plug 'junegunn/fzf.vim'
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+    " Plug 'junegunn/fzf.vim'
     " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
@@ -177,7 +177,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "
     " Programming
     " GO
-    Plug 'fatih/vim-go' 
+    "Plug 'fatih/vim-go' 
    
 call plug#end()
 

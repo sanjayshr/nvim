@@ -86,4 +86,8 @@ let g:mkdp_browser = ''
 " example
 nmap <C-s> <Plug>MarkdownPreview
 nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
+nmap <C-p> <Plug>MarkdownPreviewToggleA
+
+" Programming
+" Add missing imports on save
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
